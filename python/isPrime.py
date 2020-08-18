@@ -1,4 +1,3 @@
-
 primes = 0
 
 def isPrime(number):
@@ -7,10 +6,7 @@ def isPrime(number):
             return False
     return True
 
-
-
 for k in range(2, 200000):
     if isPrime(k):
         primes += 1
-
-print (srt(primes))
+print (primes)

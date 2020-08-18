@@ -1,7 +1,5 @@
 <?php
-
 $primes = 0;
-
 function isPrime($number){
    for ($i = 2; $i < $number; $i++ )
        if ($number % $i == 0)
