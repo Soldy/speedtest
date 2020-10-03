@@ -1,5 +1,5 @@
 use Math::Complex;
-$primes = 0;
+$primes = 1;
 
 sub isPrime{
    my $number = @_[0];
@@ -10,7 +10,7 @@ sub isPrime{
    }
    return 1;
 }
-for ($k = 2; $k < 200000; $k++){
+for ($k = 3; $k < 200000; $k++){
     if (isPrime($k) eq 1){
        $primes++;
 

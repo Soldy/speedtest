@@ -1,6 +1,6 @@
 #include <stdio.h>
 typedef enum { false, true } bool;
-int primes =0;
+int primes =1;
 
 bool isPrime(int number){
    int i;
@@ -14,7 +14,7 @@ bool isPrime(int number){
 
 int main(){
     int k;
-    for (k = 2; k < 200000; k++){
+    for (k = 3; k < 200000; k++){
         if (isPrime(k) == true){
            primes++;
         }

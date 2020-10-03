@@ -10,9 +10,10 @@ fn isprime(n: u32) -> bool {
 
 fn main(){
    let mut primes : u32 = 0;
-   for k in 2..=200000 {
+   primes +=1;
+   for k in 3..=200000 {
         if isprime(k)==true{
-           primes +=1;
+            primes +=1;
         }
    }
    println!("{}", primes);

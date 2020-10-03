@@ -1,4 +1,4 @@
-let primes = 0;
+let primes = 1;
 
 function isPrime(number){
     for (let i = 2; i < number; i++)
@@ -6,7 +6,7 @@ function isPrime(number){
             return false;
     return true;
 }
-for (let v = 2; v < 200000; v++)
+for (let v = 3; v < 200000; v++)
     if (isPrime(v))
        primes++;
 
