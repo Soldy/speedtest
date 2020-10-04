@@ -1,5 +1,5 @@
 import math
-primes = 0
+primes = 1
 
 def isPrime(number):
     for i in range(2, int(math.sqrt(number)+1)):
