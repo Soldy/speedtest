@@ -1,8 +1,9 @@
-const gnomSortBase = function (){
+const gnomeSortBase = function (){
      this.sort = function(inArr){
          store = [...inArr];
          length = inArr.length;
-         sort();
+         for (let a =0 ; length/1.5 > a ; a++)
+              sort();
          return store;
      }
      let length;
@@ -14,7 +15,7 @@ const gnomSortBase = function (){
      }
      const sort = function (){
         let i = 1;
-        while (i < n) {
+        while (i < length) {
              if (store[i-1] > store[i]){
                  swap(i, i-1);
              } else
@@ -22,3 +23,4 @@ const gnomSortBase = function (){
         }
     }
 }
+
