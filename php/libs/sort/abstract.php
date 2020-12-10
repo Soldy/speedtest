@@ -1,13 +1,14 @@
 <?php
-abstract class SortAbstract {
+abstract class SortAbstract
+{
     protected $store  = [];
     protected $length;
-    public function sorting (): bool
+    public function sorting(): bool
     {
          $this->doIt();
          return true;
     }
-    public function get (): array
+    public function get(): array
     {
         return $this->store;
     }

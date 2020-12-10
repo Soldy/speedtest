@@ -1,7 +1,7 @@
 <?php
 interface SortInterface
 {
-    public function sorting () : bool;
-    public function get () : array;
+    public function sorting() : bool;
+    public function get() : array;
 }
 
