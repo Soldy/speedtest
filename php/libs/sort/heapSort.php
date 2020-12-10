@@ -18,7 +18,7 @@ final class HeapSort extends SortAbstract implements SortInterface
             ($this->store[$right] > $this->store[$max])
         )
              $max = $right;
-        if ($max != i) {
+        if ($max != $i) {
             $this->swap($i, $max);
             $this->root($max);
         }
