@@ -3,7 +3,7 @@
 
 class prime {
       private $realPrimes = [2,3,5];
-      private function isPrime($number){
+      private function isPrime(int $number):bool{
            for ($i = 0; $this->realPrimes[$i] < sqrt($number)+1; $i++ )
                if ($number % $this->realPrimes[$i] == 0)
                     return false;
