@@ -6,7 +6,7 @@ const heapSortBase = function(){
         length = inArr.length;
         sort();
         return store;
-    }
+    };
     let length;
     let store;
     const root = function(i){
@@ -14,19 +14,19 @@ const heapSortBase = function(){
         let right = 2 * i + 2;
         let max = i;
         if (left < length && store[left] > store[max])
-             max = left;
+            max = left;
         if (right < length && store[right] > store[max]) 
-             max = right;
+            max = right;
         if (max != i) {
             swap(i, max);
             root(max);
         }
-    }
+    };
     const swap = function (A, B) {
         let temp = store[A];
         store[A] = store[B];
         store[B] = temp;
-    }
+    };
     const sort = function () {
         for (let i = Math.floor(length / 2); i >= 0; i--)
             root(i);
@@ -35,7 +35,6 @@ const heapSortBase = function(){
             length--;
             root(0);
         }
-    }
+    };
 }
-.log(heapSort.sort([3, 6, 2, 5, -75, 4, 1]));
 

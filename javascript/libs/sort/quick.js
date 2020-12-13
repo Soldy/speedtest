@@ -1,16 +1,11 @@
 
 const quickSortBase=function(){
-     this.sort = function(inArr){
-         store = sort([...inArr]);
-         return store;
-     }
-     let store;
-     const swap = function (A, B) {
-        let temp = store[A];
-        store[A] = store[B];
-        store[B] = temp;
-     }
-     const sort = function(inArr){
+    this.sort = function(inArr){
+        store = sort([...inArr]);
+        return store;
+    };
+    let store;
+    const sort = function(inArr){
         if (2 > inArr.length)
             return inArr;
         let left = [];
@@ -29,6 +24,6 @@ const quickSortBase=function(){
             pivot, 
             sort(right)
         );
-    }
-}
+    };
+};
 
