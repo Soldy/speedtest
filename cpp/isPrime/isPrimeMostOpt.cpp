@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 uint32_t primes =0;
-std::vector<int32_t> realPrimes;
+std::vector<uint32_t> realPrimes;
 
 bool isPrime(int number){
    int i;
