@@ -6,9 +6,10 @@ function isPrime(number){
             return false;
     return true;
 }
+
 for (let v = 3; v < 200000; v++)
     if (isPrime(v))
        primes++;
 
-console.log(primes.toString()+"\n");
+console.log(primes.toString());
 
