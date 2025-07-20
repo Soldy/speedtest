@@ -20,4 +20,5 @@ int main(){
         }
      }
      std::cout << primes << std::endl;
+     return 0;
 }

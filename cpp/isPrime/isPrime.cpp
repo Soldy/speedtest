@@ -1,4 +1,3 @@
-
 #include <iostream>
 uint32_t primes =1;
 
@@ -20,4 +19,5 @@ int main(){
         }
      }
      std::cout << primes << std::endl;
+     return 0;
 }

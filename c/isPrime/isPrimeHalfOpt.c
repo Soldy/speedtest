@@ -21,4 +21,5 @@ int main(){
         }
      }
      printf("\n%d\n", primes);
+     return 0;
 }

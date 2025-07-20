@@ -4,8 +4,8 @@
 uint32_t primes =0;
 std::vector<uint32_t> realPrimes;
 
-bool isPrime(int number){
-   int i;
+bool isPrime(uint32_t number){
+   uint32_t i;
    float limit = sqrt(number)+1;
    for (i = 0; realPrimes[i] < limit; i++){
        if (number % realPrimes[i] == 0){
@@ -30,4 +30,5 @@ int main(){
         }
      }
      std::cout << primes << std::endl;
+     return 0;
 }
