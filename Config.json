@@ -1,0 +1,125 @@
+{
+    "c" :{
+      "format": "c",
+      "types" : [
+         "compiled"
+      ],
+      "subs" : {
+         "isPrime":{
+             "not optimized"    : "isPrime",
+             "optimized"        : "isPrimeOpt",
+             "half optimized"   : "isPrimeHalfOpt",
+             "mostly optimized" : "isPrimeMostOpt"
+         },
+         "blindFor":{
+            "basic":"speedtest"
+         }
+
+      },
+      "optimalizations":{
+         "O0"    : "-O0",
+         "Oz"    : "-Oz",
+         "Os"    : "-Os",
+         "Og"    : "-Og",
+         "O1"    : "-O1",
+         "O2"    : "-O2",
+         "O3"    : "-O3",
+         "OFast" : "-OFast"
+      },
+      "compiler":{
+         "gcc",
+         "clang"
+      },
+      "arg" : [
+         "-o "
+      ]
+    },
+    "cpp" : {
+      "format": "cpp",
+      "types" : [
+         "compiled"
+      ],
+      "subs" : {
+         "isPrime":{
+             "not optimized"    : "isPrime",
+             "optimized"        : "isPrimeOpt",
+             "half optimized"   : "isPrimeHalfOpt",
+             "mostly optimized" : "isPrimeMostOpt"
+         },
+         "blindFor":{
+            "basic":"speedtest"
+         }
+
+      },
+      "optimalizations":{
+         "O0"    : "-O0",
+         "Oz"    : "-Oz",
+         "Os"    : "-Os",
+         "Og"    : "-Og",
+         "O1"    : "-O1",
+         "O2"    : "-O2",
+         "O3"    : "-O3",
+         "OFast" : "-OFast"
+      },
+      "compiler":{
+         "g++",
+         "clang++"
+      },
+      "arg" : [
+         "-o "
+      ]
+    },
+    "python":{
+      "format": "py",
+      "types" : [
+         "interpreted"
+      ],
+      "subs" : {
+         "isPrime":{
+             "not optimized"    : "isPrime",
+             "half optimized"   : "isPrimeHalfOpt",
+             "mostly optimized" : "isPrimeMostOpt"
+         },
+         "blindFor":{
+            "basic":"speedtest"
+         }
+      },
+      "optimalizations":{
+         "none" : ""
+      },
+      "compiler":{
+         "python",
+         "pypy"
+      },
+      "arg" : [
+         ""
+      ]
+    },
+    "javascript":{
+      "format": "js",
+      "types" : [
+         "interpreted"
+      ],
+      "subs" : {
+         "isPrime":{
+             "not optimized"    : "isPrime",
+             "half optimized"   : "isPrimeHalfOpt",
+             "mostly optimized" : "isPrimeMostOpt"
+         },
+         "blindFor":{
+            "basic":"speedtest"
+         }
+      },
+      "optimalizations":{
+         "none" : ""
+      },
+      "compiler":{
+         "node",
+         "rhino",
+         "monkey"
+      },
+      "arg" : [
+         ""
+      ]
+    }
+}
